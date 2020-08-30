@@ -1,0 +1,38 @@
+<!--底部-->
+<div class="bottom">
+    <div class="bottom-content">
+        <div class="bottom-title">
+                <span class="title1">
+                    文化传媒刊物模板
+                </span><br><br><br><br>
+            <span class="title2">
+                    24小时服务热线
+                </span><br>
+            <span class="title3">
+                    020-000000
+                </span>
+        </div>
+        <div class="bottom-list">
+            {foreach $menuData1 as $v}
+            <ul>
+            <li class="lihead">
+                <a href="/project/mvcDemo/index.php/index/category?cid={$v['cid']}">{$v["cname"]}</a>
+            </li>
+            {if isset($v["child"])}
+                {foreach $v["child"] as $v1}
+                <li>
+                    <a href="/project/mvcDemo/index.php/index/lists?cid={$v1['cid']}">
+                        {$v1["cname"]}
+                    </a>
+                </li>
+                {/foreach}
+            {/if}
+            </ul>
+            {/foreach}
+        </div>
+    </div>
+</div>
+<!-- 回到顶部 -->
+<div class="toTop">
+    <span>∧</span>
+</div>

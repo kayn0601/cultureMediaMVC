@@ -1,0 +1,125 @@
+.head-nav li:nth-child(2){
+    border-bottom: 2px solid rgba(30, 80, 174, 1);
+}
+.head-nav li:nth-child(2) a{
+    color: rgba(30, 80, 174, 1);
+}
+/* banner */
+.banner{
+    width: 100%;
+    height: 300px;
+    background: url(../../img/imgs-a/banner.png);
+    background-position: center;
+}
+/* 我们的故事 */
+.ourstory{
+    width: 1200px;
+    height: 950px;
+    margin: 0 auto;
+}
+.nowpo{
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(102, 102, 102,.2);
+    line-height: 80px;
+    color: rgb(102, 102, 102);
+    cursor: default;
+}
+.ourstoryTop{
+    width: 100%;
+    height: 372px;
+}
+.ourstoryTop img{
+    margin-top: 40px;
+    margin-left: 10px;
+    float: left;
+}
+.ostTop-content{
+    width: 580px;
+    height: 372px;
+    margin-top: 40px;
+    margin-left: 30px;
+    float: left;
+}
+.ostTop-title{
+    width: 320px;
+    height: 52px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.ostTop-title1{
+    width: 180px;
+    height: 52px;
+    font-size: 36px;
+    font-weight: 400;
+}
+.ostTop-title2{
+    width: 130px;
+    height: 52px;
+    font-size: 36px;
+    color: rgb(229, 229, 229);
+    font-family: siyuansongti;
+}
+.ostTop-pgh{
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 360px;
+    font-family: 微软雅黑, "microsoft yahei";
+    font-size: 14px;
+    line-height: 30px;
+    color: rgb(102, 102, 102);
+}
+.ourstoryBot{
+    width: 100%;
+    height: 372px;
+}
+.ourstoryBot img{
+    margin-top: 40px;
+    margin-left: 10px;
+    float: left;
+}
+.ostBot-content{
+    width: 580px;
+    height: 372px;
+    margin-top: 40px;
+    margin-left: 30px;
+    float: left;
+}
+.ostBot-pgh{
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 360px;
+    font-family: 微软雅黑, "microsoft yahei";
+    font-size: 14px;
+    line-height: 30px;
+    color: rgb(102, 102, 102);
+}
+/* 公司发展沿革 */
+.comp{
+    width: 1200px;
+    height: 750px;
+    margin: 60px auto 0;
+}
+.comp-title{
+    width: 600px;
+    height: 48px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.comp-title1{
+    width: 216px;
+    height: 48px;
+    font-size: 36px;
+    font-weight: 400;
+}
+.comp-title2{
+    width: 267px;
+    height: 48px;
+    font-size: 36px;
+    color: rgb(229, 229, 229);
+    font-family: siyuansongti;
+}
+.comp img{
+    margin-top: 50px;
+}

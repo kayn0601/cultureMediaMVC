@@ -1,0 +1,51 @@
+<div class="head">
+        <span style="position: absolute;left: 0;top: 10px;color: #999;font-style: italic;">
+            仅做练习和模拟，如有侵权，立即删除
+        </span>
+        <a id="admin" href="/project/mvcDemo/index.php/admin" style="position: absolute;right: 30px;top: 10px;color: rgb(30, 80, 174);font-style: italic;font-weight: bolder" target="_blank">
+            进入后台管理界面
+        </a>
+    <span class="head-title">文化传媒刊物</span>
+    <span class="head-subtitle">模板</span>
+    <ul class="head-nav">
+            {foreach $menuData as $v}
+            <li>
+                <a href="/project/mvcDemo/index.php/index/category?cid={$v['cid']}">{$v["cname"]}</a>
+            </li>
+            {/foreach}
+    </ul>
+</div>
+<!-- 关于我们下拉栏 -->
+<div class="aboutusTab">
+    <div class="aboutusTab-content">
+        <div class="aboutusTab-img">
+            <img src="{IMG_ADD}imgs/aboutusTab.png" alt="">
+            <div class="aboutsusTab-list">
+                <div class="aboutsusTab-list-title">
+                    知识付费时代，如何辨良莠？
+                </div>
+                <div class="aboutsusTab-list-content">
+                    知识付费是指内容创造者将书籍、理论知识、信息资讯等知识与自身认知积累融合……
+                </div>
+                <div class="aboutsusTab-list-more">
+                    <span>查看更多</span>
+                </div>
+            </div>
+        </div>
+        <div class="aboutusTab-table">
+            {foreach $menuData as $v}
+            {if isset($v["child"])}
+                <ul>
+            {foreach $v["child"] as $v1}
+                <li>
+                    <a href="/project/mvcDemo/index.php/index/lists?cid={$v1['cid']}">
+                    {$v1["cname"]}
+                    </a>
+                </li>
+            {/foreach}
+                </ul>
+            {/if}
+            {/foreach}
+        </div>
+    </div>
+</div>

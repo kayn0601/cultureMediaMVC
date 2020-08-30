@@ -1,0 +1,225 @@
+.head-nav li:nth-child(5){
+    border-bottom: 2px solid rgba(30, 80, 174, 1);
+}
+.head-nav li:nth-child(5) a{
+    color: rgba(30, 80, 174, 1);
+}
+/* banner */
+.banner{
+    width: 100%;
+    height: 300px;
+    background: url(../../img/imgs-f/banner.png);
+    background-position: center;
+}
+/* 岗位 */
+.job{
+    width: 1200px;
+    height: 890px;
+    margin: 0 auto 50px;
+}
+.nowpo{
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(102, 102, 102,.2);
+    line-height: 80px;
+    color: rgb(102, 102, 102);
+    cursor: default;
+}
+.shop{
+    width: 1170px;
+    height: 53.6px;
+    padding: 0 20px;
+    background: rgba(247, 248, 250, 1);
+    margin-top: 40px;
+    cursor: pointer;
+    border-top: 3px solid rgba(30, 80, 174, 1);
+}
+.shop-title{
+    float: left;
+    line-height: 53.6px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.shop-button{
+    float: right;
+    line-height: 53.6px;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #888;
+}
+.shopContent{
+    width: 1170px;
+    height: 516px;
+    background: rgba(247, 248, 250, 1);
+    padding: 0 20px;
+}
+.shopContent-item{
+    width: 550px;
+    height: 470px;
+    background: #fff;
+    border: 1px solid  rgba(102, 102, 102,.2);
+    float: left;
+    margin: 0 16px;
+}
+.shopContent-item-titlebox{
+    width: 510px;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+.line{
+    width: 4px;
+    height: 25px;
+    background: rgba(30, 80, 174, 1);
+    float: left;
+}
+.shopContent-item-title{
+    float: left;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+}
+.shopContent-item-date{
+    float: right;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+.shopContent-content{
+    width: 510px;
+    padding: 0 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(102, 102, 102,.8);
+}
+
+.purch{
+    width: 1170px;
+    height: 53.6px;
+    padding: 0 20px;
+    background: rgba(247, 248, 250, 1);
+    margin-top: 40px;
+    cursor: pointer;
+}
+.purch-title{
+    float: left;
+    line-height: 53.6px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.purch-button{
+    float: right;
+    line-height: 53.6px;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #888;
+}
+.purchContent{
+    width: 1170px;
+    height: 516px;
+    background: rgba(247, 248, 250, 1);
+    padding: 0 20px;
+    display: none;
+}
+.purchContent-item{
+    width: 550px;
+    height: 470px;
+    background: #fff;
+    border: 1px solid  rgba(102, 102, 102,.2);
+    float: left;
+    margin: 0 16px;
+}
+.purchContent-item-titlebox{
+    width: 510px;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+.line{
+    width: 4px;
+    height: 25px;
+    background: rgba(30, 80, 174, 1);
+    float: left;
+}
+.purchContent-item-title{
+    float: left;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+}
+.purchContent-item-date{
+    float: right;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+.purchContent-content{
+    width: 510px;
+    padding: 0 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(102, 102, 102,.8);
+}
+
+.cusc{
+    width: 1170px;
+    height: 53.6px;
+    padding: 0 20px;
+    background: rgba(247, 248, 250, 1);
+    margin-top: 40px;
+    cursor: pointer;
+}
+.cusc-title{
+    float: left;
+    line-height: 53.6px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.cusc-button{
+    float: right;
+    line-height: 53.6px;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #888;
+}
+.cuscContent{
+    width: 1170px;
+    height: 516px;
+    background: rgba(247, 248, 250, 1);
+    padding: 0 20px;
+    display: none;
+}
+.cuscContent-item{
+    width: 550px;
+    height: 470px;
+    background: #fff;
+    border: 1px solid  rgba(102, 102, 102,.2);
+    float: left;
+    margin: 0 16px;
+}
+.cuscContent-item-titlebox{
+    width: 510px;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+.line{
+    width: 4px;
+    height: 25px;
+    background: rgba(30, 80, 174, 1);
+    float: left;
+}
+.cuscContent-item-title{
+    float: left;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+}
+.cuscContent-item-date{
+    float: right;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+.cuscContent-content{
+    width: 510px;
+    padding: 0 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(102, 102, 102,.8);
+}

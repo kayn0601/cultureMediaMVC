@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品与服务</title>
+    <link rel="stylesheet" href="{CSS_ADD}index/public.css">
+    <link rel="stylesheet" href="{CSS_ADD}index/pro.css">
+    <script src="{JS_ADD}index/jquery3.5.1.js"></script>
+    <script src="{JS_ADD}index/public.js"></script>
+</head>
+<body>
+    <!-- 头部导航 -->
+    {include file=$header}
+    <!-- banner -->
+    <div class="banner"></div>
+    <!-- 图书馆馆配 -->
+    <div class="library">
+        <div class="nowpo">         
+            当前位置：首页 > 产品与服务 > 图书馆馆配
+        </div>
+        <div class="library-title">
+            <span class="library-title1">{$condata0["ctitle"]}</span>
+            <span class="library-title2">SERVICE</span>
+        </div>
+        <div class="library-content">
+            {$condata0["cons"]}
+        </div>
+        <div class="library-img1">
+            <img src="{IMG_ADD}/imgs-p/library1.png" alt="">
+            <img src="{IMG_ADD}/imgs-p/library2.png" alt="">
+            <img src="{IMG_ADD}/imgs-p/library3.png" alt="">
+        </div>
+        <div class="library-content">
+            {$condata1["cons"]}
+        </div>
+        <div class="library-img2">
+            <img src="{IMG_ADD}/imgs-p/library4.png" alt="">
+            <div>
+                <img src="{IMG_ADD}/imgs-p/library5.png" alt="">
+                <img src="{IMG_ADD}/imgs-p/library6.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 合作伙伴 -->
+    {include file=$partner}
+    <!-- 底部 -->
+    {include file=$footer}
+</body>
+</html>

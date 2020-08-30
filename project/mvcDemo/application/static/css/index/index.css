@@ -1,0 +1,327 @@
+.head-nav li:nth-child(1){
+    border-bottom: 2px solid rgba(30, 80, 174, 1);
+}
+.head-nav li:nth-child(1) a{
+    color: rgba(30, 80, 174, 1);
+}
+/* banner轮播图 */
+.banner{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.wheel{
+    width: 300%;
+    height: 800px;
+}
+.banner-back{
+    width: 33.3%;
+    height: 100%;
+    background: url(../../img/imgs/banner1.png);
+    background-position: center;
+    float: left;
+}
+.banner-title{
+    width: 1136px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 72px;
+    font-family: siyuansongti;
+    color: #fff;
+    position: relative;
+    top: 300px;
+    z-index: 5;
+}
+.banner-subtitle{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 450px;
+    font-family: siyuansongti;
+    font-weight: 5px;
+}
+.more{
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    position: relative;
+    top: 414px;
+    cursor: pointer;
+}
+.more-box{
+    color: #fff;
+    width: 164px;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+}
+.banner2-back{
+    width: 33.3%;
+    height: 100%;
+    background: url(../../img/imgs/banner2.png);
+    background-position: center;
+    float: left;
+}
+.banner2-title{
+    width: 940px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 250px;
+}
+.banner2-back .small{
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+}
+.banner2-back .big{
+    font-size: 70px;
+    color: #fff;
+    font-weight: bolder;
+}
+.banner2-title img{
+    position: absolute;
+    top: 0;
+}
+.banner2-subtitle{
+    width: 542px;
+    height: 56px;
+    border: 1px solid rgba(2, 135, 251, 1);
+    margin: 0 auto;
+    position: relative;
+    top: 330px;
+}
+.banner2-subtitle span{
+    height: 56px;
+    font-size: 24px;
+    line-height: 56px;
+    color: rgba(2, 135, 251, 1);
+    position: relative;
+    left: 39px;
+}
+.banner-arrow{
+    width: 80px;
+    height: 146px;
+    float: right;
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    background: #000;
+    opacity: 0.6;
+}
+.arrow-left{
+    width: 80px;
+    height: 73px;
+    font-size: 38px;
+    color: #fff;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+    z-index: 10;
+}
+.arrow-right{
+    width: 80px;
+    height: 73px;
+    font-size: 38px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+.arrow-left span,.arrow-right span{
+    position: relative;
+    top: 10px;
+    left: 23px;
+}
+.arrow-left span:hover,.arrow-right span:hover{
+    opacity: 0.5;
+}
+/* 关于我们 */
+.aboutus{
+    width: 100%;
+    height: 650px;
+}
+.aboutus-title{
+    width: 200px;
+    height: 52px;
+    font-family: siyuansongti;
+    color: rgb(242, 242, 242);
+    font-size: 36px;
+    margin: 60px auto 0;
+}
+.aboutus-subtitle{
+    width: 145px;
+    height: 52px;
+    font-family: siyuansongti;
+    color: rgb(53, 53, 53);
+    font-size: 36px;
+    margin: 0 auto;
+}
+.aboutus-content1{
+    width: 1176px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: 微软雅黑, "Microsoft YaHei";
+    text-align: center;
+    margin: 40px auto 0;
+    color: rgb(102, 102, 102);
+}
+.aboutus-content2{
+    width: 1176px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: 微软雅黑, "Microsoft YaHei";
+    text-align: center;
+    margin: 5px auto 0;
+    color: rgb(102, 102, 102);
+}
+.aboutus-img{
+    width: 1185px;
+    height: 264px;
+    margin: 50px auto 0;
+}
+.aboutus-img img{
+    margin: 0 10px;
+}
+.aboutus-more{
+    width: 162px;
+    height: 50px;
+    background: #1e50ae;
+    margin: 30px auto;
+}
+.aboutus-more a{
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    display: block;
+}
+/* 产品与服务 */
+.pro{
+    width: 100%;
+    height: 900px;
+    background-image: url(../../img/imgs/pro-back.png);
+    background-position: center;
+}
+.pro-title{
+    width: 510px;
+    height: 52px;
+    font-family: siyuansongti;
+    color: rgb(229, 229, 229);
+    font-size: 36px;
+    margin: 60px auto 0;
+    padding-top: 100px;
+}
+.pro-subtitle{
+    width: 180px;
+    height: 52px;
+    font-family: siyuansongti;
+    color: rgb(53, 53, 53);
+    font-size: 36px;
+    margin: 0 auto;
+}
+.pro-img{
+    width: 1210px;
+    margin: 100px auto;
+}
+.pro-img img{
+    margin: 0 10px;
+}
+/* 公司发展与沿革 */
+.comp{
+    height: 837px;
+    background-image: url(../../img/imgs/comp-back.jpg);
+    background-position: center;
+}
+.comp-title{
+    width: 510px;
+    height: 52px;
+    font-family: siyuansongti;
+    color: rgb(115, 148, 212);
+    font-size: 36px;
+    margin: 40px auto 0 150px;
+    padding-top: 100px;
+}
+.comp-subtitle{
+    width: 216px;
+    height: 52px;
+    font-family: siyuansongti;
+    color: #fff;
+    font-size: 36px;
+    margin: 10px auto 0 150px;
+}
+.comp-line{
+    width: 1200px;
+    height: 464px;
+    background-image: url(../../img/imgs/comp-line.png);
+    margin: 50px auto 20px;
+}
+.comp-year{
+    font-size: 24px;
+    color: #fff;
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 公司资讯 */
+.info{
+    height: 600px;
+}
+.info-title{
+    width: 284px;
+    height: 52px;
+    font-family: siyuansongti;
+    color: rgb(242, 242, 242);
+    font-size: 36px;
+    margin: 60px auto 0;
+}
+.info-subtitle{
+    width: 145px;
+    height: 52px;
+    font-family: siyuansongti;
+    color: rgb(53, 53, 53);
+    font-size: 36px;
+    margin: 0 auto;
+}
+.info-img{
+    width: 1200px;
+    margin: 0 auto;
+}
+.info-box{
+    float: left;
+    margin: 50px 5px;
+    border: 1px solid rgb(102, 102, 102,.2);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.info-box-title{
+    width: 317px;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: rgba(102, 102, 102, 1);
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    cursor: pointer;
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+}
+.info-box-title:hover{
+    color: rgba(30, 80, 174, 1);
+}
+.info-box-content{
+    width: 344px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: rgba(178, 178, 178, 1);
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    margin: 10px auto 20px;
+    text-align: center;
+}

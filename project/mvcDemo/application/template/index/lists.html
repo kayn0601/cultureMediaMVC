@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表页</title>
+    <link rel="stylesheet" href="{CSS_ADD}index/public.css">
+    <link rel="stylesheet" href="{CSS_ADD}index/lists.css">
+    <script src="{JS_ADD}index/jquery3.5.1.js"></script>
+    <script src="{JS_ADD}index/public.js"></script>
+</head>
+<body>
+    <!--头部-->
+    {include file=$header}
+    <!-- banner -->
+    <div class="banner"></div>
+    <!--  内容  -->
+    <div class="listbox">
+        {foreach $condata as $v}
+        <br><br>
+        <h1>
+            {$v["ctitle"]}
+        </h1>
+        <br><br>
+        <p>
+            {$v["cons"]}
+        </p>
+        {/foreach}
+    </div>
+    <!--底部-->
+    {include file=$footer}
+</body>
+</html>

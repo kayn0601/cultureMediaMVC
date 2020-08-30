@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加内容</title>
+    <link rel="stylesheet" href="{CSS_ADD}admin/bootstrap.min.css">
+    <script src="{JS_ADD}admin/jquery3.5.1.min.js"></script>
+    <script src="{JS_ADD}admin/addcon.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="/project/mvcDemo/index.php/admin/content/addcon" method="post">
+            <div class="form-group">
+                <label for="cid">所属分类</label>
+                <select class="form-control" id="cid" name="cid">
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ctitle">内容标题</label>
+                <input type="text" class="form-control" id="ctitle" name="ctitle" placeholder="标题">
+            </div>
+            <div class="form-group">
+                <label for="cons">内容主体</label>
+                <textarea class="form-control" rows="3" name="cons" id="cons" style="height: 250px"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">添加</button>
+        </form>
+    </div>
+</body>
+</html>

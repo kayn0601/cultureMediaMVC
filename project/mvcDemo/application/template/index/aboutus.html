@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="{CSS_ADD}index/public.css">
+    <link rel="stylesheet" href="{CSS_ADD}index/aboutus.css">
+    <script src="{JS_ADD}index/jquery3.5.1.js"></script>
+    <script src="{JS_ADD}index/public.js"></script>
+</head>
+<body>
+    <!-- 头部导航 -->
+    {include file=$header}
+    <!-- banner -->
+    <div class="banner"></div>
+    <!-- 我们的故事 -->
+    <div class="ourstory">
+        <div class="nowpo">         
+            当前位置：首页 > 关于我们 > 公司概况
+        </div>
+        <div class="ourstoryTop">
+            <img src="{IMG_ADD}/imgs-a/ost1.png" alt="">
+            <div class="ostTop-content">
+                <div class="ostTop-title">
+                    <span class="ostTop-title1">{$condata0["ctitle"]}</span>
+                    <span class="ostTop-title2">STORY</span>
+                </div>
+                <div class="ostTop-pgh">
+                    {$condata0["cons"]}
+                </div>
+            </div>
+        </div>
+        <div class="ourstoryBot">
+            <div class="ostBot-content">
+                <div class="ostBot-pgh">
+                    {$condata1["cons"]}
+                </div>
+            </div>
+            <img src="{IMG_ADD}/imgs-a/ost2.png" alt="">
+        </div>
+    </div>
+    <!-- 公司发展沿革 -->
+    <div class="comp">
+        <div class="comp-title">
+            <span class="comp-title1">公司发展沿革</span>
+            <span class="comp-title2">DEVELOPMENT</span>
+        </div>
+        <img src="{IMG_ADD}/imgs-a/comp.png" alt="">
+    </div>
+    <!-- 合作伙伴 -->
+    {include file=$partner}
+    <!-- 底部 -->
+    {include file=$footer}
+</body>
+</html>
+</body>
+</html>

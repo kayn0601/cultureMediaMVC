@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="{CSS_ADD}index/public.css">
+    <link rel="stylesheet" href="{CSS_ADD}index/index.css">
+    <script src="{JS_ADD}index/jquery3.5.1.js"></script>
+    <script src="{JS_ADD}index/public.js"></script>
+    <script src="{JS_ADD}index/index.js"></script>
+</head>
+<body>
+    <!-- 头部导航 -->
+    {include file=$header}
+    <!-- banner轮播图 -->
+    <div class="banner">
+        <div class="wheel">
+            <div class="banner-back">
+                <h1 class="banner-title">
+                    致力弘文载道&nbsp;&nbsp;服务科技创新
+                </h1>
+                <h5 class="banner-subtitle">
+                    科&nbsp;&nbsp;学&nbsp;&nbsp;/&nbsp;&nbsp;技&nbsp;&nbsp;术&nbsp;&nbsp;/&nbsp;&nbsp;医&nbsp;&nbsp;学&nbsp;&nbsp;/&nbsp;&nbsp;教&nbsp;&nbsp;育&nbsp;&nbsp;/&nbsp;&nbsp;人&nbsp;&nbsp;文&nbsp;&nbsp;社&nbsp;&nbsp;科
+                </h5>
+                <div class="more">
+                    <div class="more-box">了解更多</div>
+                </div>
+            </div>
+            <div class="banner2-back">
+                <h1 class="banner2-title">
+                    <span class="small">书籍品类</span>
+                    <span class="big">全</span>
+                    <img src="{IMG_ADD}imgs/true.png" alt="">
+                    &nbsp;&nbsp;
+                    <span class="small">响应速度</span>
+                    <span class="big">快</span>
+                    <img src="{IMG_ADD}imgs/true.png" alt="">
+                    &nbsp;&nbsp;
+                    <span class="small">服务快捷</span>
+                    <span class="big">好</span>
+                    <img src="{IMG_ADD}imgs/true.png" alt="">
+                </h1>
+                <div class="banner2-subtitle">
+                    <span>大型文化传媒&nbsp;&nbsp;值得相信的图书馆官配服务商</span>
+                </div>
+            </div>
+            <div class="banner-back">
+                <h1 class="banner-title">
+                    致力弘文载道&nbsp;&nbsp;服务科技创新
+                </h1>
+                <h5 class="banner-subtitle">
+                    科&nbsp;&nbsp;学&nbsp;&nbsp;/&nbsp;&nbsp;技&nbsp;&nbsp;术&nbsp;&nbsp;/&nbsp;&nbsp;医&nbsp;&nbsp;学&nbsp;&nbsp;/&nbsp;&nbsp;教&nbsp;&nbsp;育&nbsp;&nbsp;/&nbsp;&nbsp;人&nbsp;&nbsp;文&nbsp;&nbsp;社&nbsp;&nbsp;科
+                </h5>
+                <div class="more">
+                    <div class="more-box">了解更多</div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-arrow">
+            <div class="arrow-left">
+                <span>&lt;</span>
+            </div>
+            <div class="arrow-right">
+                <span>&gt;</span>
+            </div>
+        </div>
+    </div>
+    <!-- 关于我们 -->
+    <div class="aboutus">
+        <div class="aboutus-title">
+            ABOUT&nbsp;US
+        </div>
+        {foreach $condata as $v}
+        <div class="aboutus-subtitle">
+            {$v["ctitle"]}
+        </div>
+        <div class="aboutus-content1">
+            {$v["cons"]}
+        </div>
+        {/foreach}
+        <div class="aboutus-img">
+            <img src="{IMG_ADD}imgs/aboutus1.png" alt="">
+            <img src="{IMG_ADD}imgs/aboutus2.png" alt="">
+            <img src="{IMG_ADD}imgs/aboutus3.png" alt="">
+        </div>
+        <div class="aboutus-more">
+            <a href="#">了解更多</a>
+        </div>
+    </div>
+    <!-- 产品与服务 -->
+    <div class="pro">
+        <div class="pro-title">
+            PRODUCTS&nbsp;AND&nbsp;SERVICES
+        </div>
+        <div class="pro-subtitle">
+            产品与服务
+        </div>
+        <div class="pro-img">
+            <img src="{IMG_ADD}imgs/pro1.png" alt="">
+            <img src="{IMG_ADD}imgs/pro2.png" alt="">
+            <img src="{IMG_ADD}imgs/pro3.png" alt="">
+            <img src="{IMG_ADD}imgs/pro4.png" alt="">
+        </div>
+    </div>
+    <!-- 公司发展沿革 -->
+    <div class="comp">
+        <div class="comp-title">
+            PRODUCTS&nbsp;AND&nbsp;SERVICES
+        </div>
+        <div class="comp-subtitle">
+            公司发展沿革
+        </div>
+        <div class="comp-line"></div>
+        <div class="comp-year">
+            2018年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2017年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2016年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2015年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2014年
+        </div>
+    </div>
+    <!-- 公司资讯 -->
+    <div class="info">
+        <div class="info-title">
+            INFORMATION
+        </div>
+        <div class="info-subtitle">
+            公司资讯
+        </div>
+        <div class="info-img">
+            {foreach $sonInfo as $v}
+            <div class="info-box">
+                <img src="{IMG_ADD}imgs/info1.jpg" alt="">
+                <a class="info-box-title" href="/project/mvcDemo/index.php/index/lists?cid={$v['cid']}">
+                    {$v["cname"]}
+                </a>
+                <div class="info-box-content">
+                    {$v["info"]}
+                </div>
+            </div>
+            {/foreach}
+        </div>
+    </div>
+    <!-- 合作伙伴 -->
+    {include file=$partner}
+    <!-- 底部 -->
+    {include file=$footer}
+</body>
+</html>

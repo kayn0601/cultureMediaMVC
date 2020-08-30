@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻资讯</title>
+    <link rel="stylesheet" href="{CSS_ADD}index/public.css">
+    <link rel="stylesheet" href="{CSS_ADD}index/new.css">
+    <script src="{JS_ADD}index/jquery3.5.1.js"></script>
+    <script src="{JS_ADD}index/public.js"></script>
+</head>
+<body>
+    <!-- 头部导航 -->
+    {include file=$header}
+    <!-- banner -->
+    <div class="banner"></div>
+    <!-- 公司动态 -->
+    <div class="com">
+        <div class="nowpo">         
+            当前位置：首页 > 新闻资讯 > 公司动态
+        </div>
+        <div class="comTop">
+            <img src="{IMG_ADD}imgs-n/comp1.png" alt="">
+            <div class="comTop-content">
+                {foreach $newarr1 as $v}
+                <div class="Topcontent">
+                    <div class="topwrap">
+                        <div>30</div>
+                        <div>2019-10</div>
+                    </div>
+                    <div class="topword">
+                        <a class="topword-title" href="/project/mvcDemo/index.php/index/lists?cid={$v['cid']}">
+                            {$v["cname"]}
+                        </a>
+                        <br>
+                        <a class="topword-content">
+                            {$v["info"]}
+                        </a>
+                    </div>
+                </div>
+                {/foreach}
+            </div>
+        </div>
+        <div class="comBot">
+            {foreach $newarr2 as $v}
+            <div class="comBot-content">
+                <img src="{IMG_ADD}imgs-n/comp2.png" alt="">
+                <div class="comBot-word">
+                    <a class="comBot-word-title" href="/project/mvcDemo/index.php/index/lists?cid={$v['cid']}">{$v["cname"]}</a>
+                    <div>
+                        {$v["info"]}
+                    </div>
+                </div>
+                <div class="comBot-date">
+                    2019-10-30
+                </div>
+            </div>
+            {/foreach}
+        </div>
+    </div>
+    <!-- 合作伙伴 -->
+    {include file=$partner}
+    <!-- 底部 -->
+    {include file=$footer}
+</body>
+</html>

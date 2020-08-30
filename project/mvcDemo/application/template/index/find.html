@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诚聘英才</title>
+    <link rel="stylesheet" href="{CSS_ADD}index/public.css">
+    <link rel="stylesheet" href="{CSS_ADD}index/find.css">
+    <script src="{JS_ADD}index/jquery3.5.1.js"></script>
+    <script src="{JS_ADD}index/public.js"></script>
+    <script src="{JS_ADD}index/find.js"></script>
+</head>
+<body>
+    <!-- 头部导航 -->
+    {include file=$header}
+    <!-- banner -->
+    <div class="banner"></div>
+    <!-- 岗位 -->
+    <div class="job">
+        <div class="nowpo">         
+            当前位置：首页 > 诚聘英才 > 社会招聘
+        </div>
+        <div class="shop">
+            <div class="shop-title">市场部岗位</div>
+            <div class="shop-button">∧</div>
+        </div>
+        <div class="shopContent">
+            <div class="shopContent-item">
+                <div class="shopContent-item-titlebox">
+                    <div class="line"></div>
+                    <div class="shopContent-item-title">
+                        {$condata0["ctitle"]}
+                    </div>
+                    <div class="shopContent-item-date">
+                        发布时间：2019-10-29
+                    </div>
+                </div>
+                <div class="shopContent-content">
+                    {$condata0["cons"]}
+                </div>
+            </div>
+            <div class="shopContent-item">
+                <div class="shopContent-item-titlebox">
+                    <div class="line"></div>
+                    <div class="shopContent-item-title">
+                        {$condata1["ctitle"]}
+                    </div>
+                    <div class="shopContent-item-date">
+                        发布时间：2019-10-29
+                    </div>
+                </div>
+                <div class="shopContent-content">
+                    {$condata1["cons"]}
+                </div>
+            </div>
+        </div>
+        <div class="purch">
+            <div class="purch-title">采购部岗位</div>
+            <div class="purch-button">∨</div>
+        </div>
+        <div class="purchContent">
+            <div class="purchContent-item">
+                <div class="purchContent-item-titlebox">
+                    <div class="line"></div>
+                    <div class="purchContent-item-title">
+                        {$condata2["ctitle"]}
+                    </div>
+                    <div class="purchContent-item-date">
+                        发布时间：2019-10-29
+                    </div>
+                </div>
+                <div class="purchContent-content">
+                    {$condata2["cons"]}
+                </div>
+            </div>
+            <div class="purchContent-item">
+                <div class="purchContent-item-titlebox">
+                    <div class="line"></div>
+                    <div class="purchContent-item-title">
+                        {$condata3["ctitle"]}
+                    </div>
+                    <div class="purchContent-item-date">
+                        发布时间：2019-10-29
+                    </div>
+                </div>
+                <div class="purchContent-content">
+                    {$condata3["cons"]}
+                </div>
+            </div>
+        </div>
+        <div class="cusc">
+            <div class="cusc-title">客服部岗位</div>
+            <div class="cusc-button">∨</div>
+        </div>
+        <div class="cuscContent">
+            <div class="cuscContent-item">
+                <div class="cuscContent-item-titlebox">
+                    <div class="line"></div>
+                    <div class="cuscContent-item-title">
+                        {$condata4["ctitle"]}
+                    </div>
+                    <div class="cuscContent-item-date">
+                        发布时间：2019-10-29
+                    </div>
+                </div>
+                <div class="cuscContent-content">
+                    {$condata4["cons"]}
+                </div>
+            </div>
+            <div class="cuscContent-item">
+                <div class="cuscContent-item-titlebox">
+                    <div class="line"></div>
+                    <div class="cuscContent-item-title">
+                        {$condata5["ctitle"]}
+                    </div>
+                    <div class="cuscContent-item-date">
+                        发布时间：2019-10-29
+                    </div>
+                </div>
+                <div class="cuscContent-content">
+                    {$condata5["cons"]}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    {include file=$footer}
+</body>
+</html>
