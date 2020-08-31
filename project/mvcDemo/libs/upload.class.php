@@ -40,12 +40,12 @@ class upload{
         if (!is_dir($this->defaultDir)){
             mkdir($this->defaultDir,0777,true);
         }
-        $currentDir=$this->defaultDir.DIRECTORY_SEPARATOR.date("Y-m-d");
+        $currentDir=$this->defaultDir."/".date("Y-m-d");
         if (!is_dir($currentDir)){
             mkdir($currentDir,0777,true);
         }
         $fileName=time().mt_rand(1000,20000).$this->data["name"];
-        $this->fullpath=$currentDir.DIRECTORY_SEPARATOR.$fileName;
+        $this->fullpath=$currentDir."/".$fileName;
     }
     private function move(){
         move_uploaded_file($this->data["tmp_name"],$this->fullpath);

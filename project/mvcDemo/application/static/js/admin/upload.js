@@ -7,10 +7,10 @@ class upload{
     this.size=1024*1024*10;
     this.type="image/png;image/jpeg;image/gif";
     this.filename="file";
-    this.selectBtnStyle="width:55px;height:35px;cursor:pointer;border-radius:5px;background:#337AB7;";
+    this.selectBtnStyle="width:55px;height:35px;cursor:pointer;border-radius:5px;background:cyan;";
     this.selectBtnCon="请选择";
 
-    this.upBtnStyle="width:55px;height:35px;cursor:pointer;border-radius:5px;background:#ccc;clear:both;"
+    this.upBtnStyle="width:75px;height:35px;cursor:pointer;border-radius:5px;background:#ccc;clear:both;"
     this.upBtnCon="点击上传";
 
     this.pStyle="width:500px;";

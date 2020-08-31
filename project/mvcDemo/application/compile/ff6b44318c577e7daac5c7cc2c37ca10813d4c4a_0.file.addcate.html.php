@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 14:51:43
+/* Smarty version 3.1.34-dev-7, created on 2020-08-31 00:18:49
   from 'D:\wamp64\www\project\mvcDemo\application\template\admin\addcate.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4bbcff3ced30_23905454',
+  'unifunc' => 'content_5f4c41e9782621_77013809',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ff6b44318c577e7daac5c7cc2c37ca10813d4c4a' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\admin\\addcate.html',
-      1 => 1598796948,
+      1 => 1598833124,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4bbcff3ced30_23905454 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4c41e9782621_77013809 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -59,6 +59,7 @@ admin/upload.js"><?php echo '</script'; ?>
             <br>
             <input type="hidden" value="hidden" name="imgurl">
             <div class="upload"></div>
+            <br>
             <input type="submit" value="添加" class="btn btn-primary">
         </form>
     </div>

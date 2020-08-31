@@ -79,7 +79,7 @@ class category{
         $tpl_name=$_POST["tpl_name"];
         $database=new db();
         $db=$database->db;
-        $db->query("insert into category (cname,pid,isshow,tpl_name,info) values ('$cname','$cid','$isshow','$tpl_name','$info','$path')");
+        $db->query("insert into category (cname,pid,isshow,tpl_name,info,path) values ('$cname','$cid','$isshow','$tpl_name','$info','$path')");
         if ($db->affected_rows>0){
             header("location:/project/mvcDemo/index.php/admin/category");
         }
@@ -134,7 +134,7 @@ class category{
         $upload=new upload();
         $upload->up();
 
-        $path=HOST_ADD."/".$upload->fullpath;
+        $path=HOST_ADD."/project/mvcDemo/".$upload->fullpath;
         echo "$path";
     }
 }
