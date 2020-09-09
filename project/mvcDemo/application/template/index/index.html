@@ -131,7 +131,7 @@
         <div class="info-img">
             {foreach $sonInfo as $v}
             <div class="info-box">
-                <img src="{IMG_ADD}imgs/info1.jpg" alt="">
+                <img src="{$v['path']}" alt="">
                 <a class="info-box-title" href="/project/mvcDemo/index.php/index/lists?cid={$v['cid']}">
                     {$v["cname"]}
                 </a>

@@ -44,7 +44,7 @@ class route{
                 die("This class not exists");
             }
         }else{
-            die("This module not exits");
+            die("This operation not exits");
         }
     }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 02:32:04
+/* Smarty version 3.1.34-dev-7, created on 2020-09-08 09:03:59
   from 'D:\wamp64\www\project\mvcDemo\application\template\index\header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4b0fa42f3fe4_84517332',
+  'unifunc' => 'content_5f5748ff4223f2_72635705',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bcff4f662ad61d7e6020bc8d64c6ebbd7b1d4864' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\index\\header.html',
-      1 => 1598754722,
+      1 => 1599555835,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4b0fa42f3fe4_84517332 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5748ff4223f2_72635705 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="head">
         <span style="position: absolute;left: 0;top: 10px;color: #999;font-style: italic;">
             仅做练习和模拟，如有侵权，立即删除
@@ -81,7 +81,7 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['v1']->value) {
 $_smarty_tpl->tpl_vars['v1']->do_else = false;
 ?>
                 <li>
-                    <a href="/project/mvcDemo/index.php/index/lists?cid=<?php echo $_smarty_tpl->tpl_vars['v1']->value['cid'];?>
+                    <a href="/project/mvcDemo/index.php/index/category?cid=<?php echo $_smarty_tpl->tpl_vars['v1']->value['pid'];?>
 ">
                     <?php echo $_smarty_tpl->tpl_vars['v1']->value["cname"];?>
 

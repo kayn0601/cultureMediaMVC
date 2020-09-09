@@ -44,7 +44,7 @@
         <div class="comBot">
             {foreach $newarr2 as $v}
             <div class="comBot-content">
-                <img src="{IMG_ADD}imgs-n/comp2.png" alt="">
+                <img src="{$v['path']}" alt="">
                 <div class="comBot-word">
                     <a class="comBot-word-title" href="/project/mvcDemo/index.php/index/lists?cid={$v['cid']}">{$v["cname"]}</a>
                     <div>

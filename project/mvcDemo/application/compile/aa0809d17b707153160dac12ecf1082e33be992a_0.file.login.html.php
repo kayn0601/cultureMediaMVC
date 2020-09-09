@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-22 11:41:08
+/* Smarty version 3.1.34-dev-7, created on 2020-09-07 13:06:19
   from 'D:\wamp64\www\project\mvcDemo\application\template\admin\login.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4104545922f1_75115065',
+  'unifunc' => 'content_5f56304b42f694_97511597',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aa0809d17b707153160dac12ecf1082e33be992a' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\admin\\login.html',
-      1 => 1598096433,
+      1 => 1599483977,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4104545922f1_75115065 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f56304b42f694_97511597 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 ';?>
 <!doctype html>
@@ -47,6 +47,7 @@ admin/login.js"><?php echo '</script'; ?>
  src="<?php echo JS_ADD;?>
 admin/jquery.validate.min.js"><?php echo '</script'; ?>
 >
+    <link rel="stylesheet" href="../../static/css/admin/login.css">
 </head>
 <body>
     <form class="form-horizontal" role="form" action="/project/mvcDemo//index.php/admin/index/login" method="post" style="height: 350px;">

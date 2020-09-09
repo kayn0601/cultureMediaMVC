@@ -27,7 +27,7 @@ class category{
                 $s="导航栏隐藏";
             }
 
-            $str.='<tr><td>'.($i+1).'级目录</td><td>'.str_repeat("↘",$i).$row["cname"].'</td><td>'.$s.'</td><td>'.$row["tpl_name"].'</td><td>
+            $str.='<tr><td>'.($i+1).'级目录</td><td>'.str_repeat("↘",$i).$row["cname"].'</td><td>'.$s.'</td><td>
 <a href="javascript:;" attr="'.$row["cid"].'" class="add btn btn-primary">添加</a>
 <a href="javascript:;" attr="'.$row["cid"].'" pid="'.$row["pid"].'"class="edit btn btn-success">修改</a>
 <a href="/project/mvcDemo/index.php/admin/category/del?cid='.$row["cid"].'" attr="'.$row["cid"].'" class="remove btn btn-danger">删除</a>
@@ -108,11 +108,12 @@ class category{
         $isshow=$_GET["isshow"];
         $tpl_name=$_GET["tpl_name"];
         $info=$_GET["info"];
+        $imgurl=$_GET["imgurl"];
 
         $database=new db();
         $db=$database->db;
 
-        $db->query("update category set cname='$cname',pid='$pid',isshow='$isshow',tpl_name='$tpl_name',info='$info' where cid=".$cid);
+        $db->query("update category set cname='$cname',pid='$pid',isshow='$isshow',tpl_name='$tpl_name',info='$info',path='$imgurl' where cid=".$cid);
 
         if ($db->affected_rows>0){
             echo "ok";

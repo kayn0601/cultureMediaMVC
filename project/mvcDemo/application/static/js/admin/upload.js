@@ -4,24 +4,33 @@ class upload{
     this.data=[];
     this.list=[];
 
+    //前端验证上传大小
     this.size=1024*1024*10;
+    //前端验证上传类型
     this.type="image/png;image/jpeg;image/gif";
+    //前端指定上传的名字
     this.filename="file";
-    this.selectBtnStyle="width:55px;height:35px;cursor:pointer;border-radius:5px;background:cyan;";
+    //选择按钮的样式
+    this.selectBtnStyle="width:55px;height:35px;cursor:pointer;border-radius:5px;background:cyan;line-height:35px;";
+    //选择按钮的文本
     this.selectBtnCon="请选择";
 
-    this.upBtnStyle="width:75px;height:35px;cursor:pointer;border-radius:5px;background:#ccc;clear:both;"
+    //上传按钮的样式
+    this.upBtnStyle="width:75px;height:35px;cursor:pointer;border-radius:5px;background:#ccc;clear:both;line-height:35px;"
+    //上传按钮的文本
     this.upBtnCon="点击上传";
-
+    //预览区域的大小
     this.pStyle="width:500px;";
-
-      this.listStyle="width:150px;height:150px;float:left;border:1px solid #ccc;padding:5px;";
-
-      this.progressStyle="width:100%;height:5px;position:absolute;bottom:0;left:0;"
-
+    //预览列表的样式
+    this.listStyle="width:150px;height:150px;float:left;border:1px solid #ccc;padding:5px;";
+    //进度条容器的样式
+    this.progressStyle="width:100%;height:5px;position:absolute;bottom:0;left:0;"
+    //进度条的样式
       this.bar="width:0%;height:100%;background:red";
-      this.errorStyle="width:100%;height:30px;position:absolute;left:0;top:0;right:0;bottom:0;margin:auto;text-align:center;line-height:30px;color:red;background:rgba(0,0,0,.8)";
-      this.errorCon="错误";
+    //发生错误的样式
+    this.errorStyle="width:100%;height:30px;position:absolute;left:0;top:0;right:0;bottom:0;margin:auto;text-align:center;line-height:30px;color:red;background:rgba(0,0,0,.8)";
+    //发生错误的文本
+    this.errorCon="错误";
 
   }
   /*

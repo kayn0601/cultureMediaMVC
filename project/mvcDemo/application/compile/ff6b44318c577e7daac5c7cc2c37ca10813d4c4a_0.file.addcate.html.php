@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-31 00:18:49
+/* Smarty version 3.1.34-dev-7, created on 2020-09-08 06:32:14
   from 'D:\wamp64\www\project\mvcDemo\application\template\admin\addcate.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4c41e9782621_77013809',
+  'unifunc' => 'content_5f57256ebb4765_83702765',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ff6b44318c577e7daac5c7cc2c37ca10813d4c4a' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\admin\\addcate.html',
-      1 => 1598833124,
+      1 => 1599546722,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4c41e9782621_77013809 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f57256ebb4765_83702765 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -39,6 +39,11 @@ admin/jquery3.5.1.min.js"><?php echo '</script'; ?>
  src="<?php echo JS_ADD;?>
 admin/upload.js"><?php echo '</script'; ?>
 >
+    <style>
+        body{
+            background: rgba(224,223,205,0.5);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -57,6 +62,7 @@ admin/upload.js"><?php echo '</script'; ?>
             栏目描述：<br>
             <textarea name="info" id="" cols="30" rows="5"></textarea>
             <br>
+            图片：
             <input type="hidden" value="hidden" name="imgurl">
             <div class="upload"></div>
             <br>

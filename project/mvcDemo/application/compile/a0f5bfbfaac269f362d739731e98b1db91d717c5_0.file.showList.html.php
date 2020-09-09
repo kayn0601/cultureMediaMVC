@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-26 14:31:35
+/* Smarty version 3.1.34-dev-7, created on 2020-09-08 06:32:20
   from 'D:\wamp64\www\project\mvcDemo\application\template\admin\showList.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f46724719b770_60137841',
+  'unifunc' => 'content_5f572574dc4912_53018455',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a0f5bfbfaac269f362d739731e98b1db91d717c5' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\admin\\showList.html',
-      1 => 1598451599,
+      1 => 1599546722,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f46724719b770_60137841 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f572574dc4912_53018455 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -31,6 +31,11 @@ function content_5f46724719b770_60137841 (Smarty_Internal_Template $_smarty_tpl)
     <title>查看内容</title>
     <link rel="stylesheet" href="<?php echo CSS_ADD;?>
 admin/bootstrap.min.css">
+    <style>
+        body{
+            background: rgba(224,223,205,0.5);
+        }
+    </style>
 </head>
 <body>
     <div class="container">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-29 08:40:56
+/* Smarty version 3.1.34-dev-7, created on 2020-09-09 02:16:19
   from 'D:\wamp64\www\project\mvcDemo\application\template\admin\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4a14982a7d29_57158501',
+  'unifunc' => 'content_5f583af3aefbb4_98854168',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79a050e159fbc4067e86e2401b6695a6e3507e7e' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\admin\\index.html',
-      1 => 1598690455,
+      1 => 1599617774,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4a14982a7d29_57158501 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f583af3aefbb4_98854168 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -29,67 +29,20 @@ function content_5f4a14982a7d29_57158501 (Smarty_Internal_Template $_smarty_tpl)
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>后台首页</title>
-    <style>
-        html,body{
-            width: 100%;height: 100%;
-        }
-        body{
-            padding: 0;
-            margin: 0;
-        }
-        .header{
-            width: 100%;
-            min-height: 20%;
-            background: #3882bb;
-        }
-        .header h1{
-            text-align: center;
-            padding-top: 30px;
-            margin: 0;
-        }
-        .logininfo{
-            float: right;
-            margin-right: 30px;
-        }
-        .main{
-            width: 100%;
-            height: 70%;
-            border: 1px solid #3882bb;
-        }
-        .bottom{
-            width: 100%;
-            min-height: 10%;
-            position: relative;
-        }
-        .bottom div{
-            position: absolute;
-            left: 0;right: 0;top: 0;bottom: 0;
-            margin: auto;
-            text-align: center;
-            line-height: 40px;
-        }
-        .left{
-            width: 25%;height: 100%;border-right: 5px solid #3882bb;
-            float: left;box-sizing: border-box;
-        }
-        .right{
-            width: 75%;height: 100%;
-            float: left;box-sizing: border-box;
-        }
-        iframe{
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="<?php echo CSS_ADD;?>
+admin/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo CSS_ADD;?>
+admin/index.css">
 </head>
 <body>
+<container>
     <div class="header">
         <h1>欢迎来到后台管理系统</h1>
         <div class="logininfo">
             <span>用户：<?php echo $_smarty_tpl->tpl_vars['user']->value;?>
 ，</span>
             <span>
-                <a href="/project/mvcDemo/index.php/admin/index/logout">退出登录</a>
+                <a href="/project/mvcDemo/index.php/admin/index/logout" class="btn btn-danger">退出登录</a>
             </span>
         </div>
     </div>
@@ -97,35 +50,35 @@ function content_5f4a14982a7d29_57158501 (Smarty_Internal_Template $_smarty_tpl)
         <div class="left">
             <ul>
                 <li>
-                    用户管理
+                    <h3>用户管理</h3>
                     <ul>
                         <li>
-                            <a href="/project/mvcDemo/index.php/admin/user/adduser" target="main">添加用户</a>
+                            <a href="/project/mvcDemo/index.php/admin/user/adduser" target="main" class="btn btn-success">添加用户</a>
                         </li>
                         <li>
-                            <a href="/project/mvcDemo/index.php/admin/user/edituser" target="main">修改用户</a>
+                            <a href="/project/mvcDemo/index.php/admin/user/edituser" target="main" class="btn btn-primary">修改用户</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    栏目管理
+                    <h3>栏目管理</h3>
                     <ul>
                         <li>
-                            <a href="/project/mvcDemo/index.php/admin/category/addcate" target="main">添加栏目</a>
+                            <a href="/project/mvcDemo/index.php/admin/category/addcate" target="main" class="btn btn-success">添加栏目</a>
                         </li>
                         <li>
-                            <a href="/project/mvcDemo/index.php/admin/category" target="main">查看栏目</a>
+                            <a href="/project/mvcDemo/index.php/admin/category" target="main" class="btn btn-primary">查看栏目</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    内容管理
+                    <h3>内容管理</h3>
                     <ul>
                         <li>
-                            <a href="/project/mvcDemo/index.php/admin/content/add" target="main">添加内容</a>
+                            <a href="/project/mvcDemo/index.php/admin/content/add" target="main" class="btn btn-success">添加内容</a>
                         </li>
                         <li>
-                            <a href="/project/mvcDemo/index.php/admin/content/showList" target="main">查看内容</a>
+                            <a href="/project/mvcDemo/index.php/admin/content/showList" target="main" class="btn btn-primary">查看内容</a>
                         </li>
                     </ul>
                 </li>
@@ -138,6 +91,7 @@ function content_5f4a14982a7d29_57158501 (Smarty_Internal_Template $_smarty_tpl)
     <div class="bottom">
         <div>xxxx版权信息，xxx制作，联系方式</div>
     </div>
+</container>
 </body>
 </html><?php }
 }

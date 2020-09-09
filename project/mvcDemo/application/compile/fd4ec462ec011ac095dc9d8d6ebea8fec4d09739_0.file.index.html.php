@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 08:47:42
+/* Smarty version 3.1.34-dev-7, created on 2020-08-31 09:30:22
   from 'D:\wamp64\www\project\mvcDemo\application\template\index\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4b67ae841150_29654286',
+  'unifunc' => 'content_5f4cc32e8ff8e1_47710664',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fd4ec462ec011ac095dc9d8d6ebea8fec4d09739' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\index\\index.html',
-      1 => 1598777261,
+      1 => 1598866221,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4b67ae841150_29654286 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4cc32e8ff8e1_47710664 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -190,8 +190,8 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 $_smarty_tpl->tpl_vars['v']->do_else = false;
 ?>
             <div class="info-box">
-                <img src="<?php echo IMG_ADD;?>
-imgs/info1.jpg" alt="">
+                <img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['path'];?>
+" alt="">
                 <a class="info-box-title" href="/project/mvcDemo/index.php/index/lists?cid=<?php echo $_smarty_tpl->tpl_vars['v']->value['cid'];?>
 ">
                     <?php echo $_smarty_tpl->tpl_vars['v']->value["cname"];?>

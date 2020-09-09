@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-27 02:06:33
+/* Smarty version 3.1.34-dev-7, created on 2020-09-08 06:32:19
   from 'D:\wamp64\www\project\mvcDemo\application\template\admin\addcon.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4715291314a5_28967198',
+  'unifunc' => 'content_5f5725734cf513_43347521',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '846cd28daaeb0fcd6bb7ede5900a3261aac9e377' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\admin\\addcon.html',
-      1 => 1598493989,
+      1 => 1599546722,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4715291314a5_28967198 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5725734cf513_43347521 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +36,11 @@ admin/jquery3.5.1.min.js"><?php echo '</script'; ?>
  src="<?php echo JS_ADD;?>
 admin/addcon.js"><?php echo '</script'; ?>
 >
+    <style>
+        body{
+            background: rgba(224,223,205,0.5);
+        }
+    </style>
 </head>
 <body>
     <div class="container">

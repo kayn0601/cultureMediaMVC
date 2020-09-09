@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-29 11:39:57
+/* Smarty version 3.1.34-dev-7, created on 2020-09-08 06:32:16
   from 'D:\wamp64\www\project\mvcDemo\application\template\admin\category.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4a3e8d555233_44403016',
+  'unifunc' => 'content_5f5725703c9dc5_04415905',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c9fde2f58ad04423a948b925da43dae7e90c1171' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\admin\\category.html',
-      1 => 1598701156,
+      1 => 1599546722,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4a3e8d555233_44403016 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5725703c9dc5_04415905 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -39,6 +39,15 @@ admin/jquery3.5.1.min.js"><?php echo '</script'; ?>
  src="<?php echo JS_ADD;?>
 admin/category.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="<?php echo JS_ADD;?>
+admin/upload.js"><?php echo '</script'; ?>
+>
+    <style>
+        body{
+            background: rgba(224,223,205,0.5);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -54,7 +63,7 @@ admin/category.js"><?php echo '</script'; ?>
 
     <style>
         .pannel{
-            width:40%;height: 40%;
+            width:40%;height: 50%;
             background:#fff;
             box-shadow: 0 0 4px #000;
             position: fixed;
@@ -89,9 +98,25 @@ admin/category.js"><?php echo '</script'; ?>
         </select><br>
             模板：<input type="text" name="tpl_name" placeholder="请输入对应模板名.html"><br>
             描述：<textarea name="info"></textarea><br>
+            <input type="hidden" id="imgurl" name="imgurl">
+            <div class="editupload"></div>
             <input type="button" value="修改" class="btn btn-success">
         </form>
     </div>
+    <?php echo '<script'; ?>
+>
+        var uploadObj=new upload();
+        uploadObj.multiple=true;
+        uploadObj.createView({
+            parent:document.querySelector(".editupload")
+        })
+        uploadObj.selectBtn.parentNode.style.lineHeight="35px";
+        uploadObj.upBtn.style.lineHeight="35px";
+        uploadObj.up("/project/mvcDemo/index.php/admin/category/uploadfile",function (e) {
+            $("#imgurl").val(e[0]);
+        })
+    <?php echo '</script'; ?>
+>
 </body>
 </html><?php }
 }

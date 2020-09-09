@@ -75,6 +75,7 @@ $(function () {
             success:function (e) {
                 console.log(e)
                 if(e=="ok"){
+                    alert("修改成功")
                     location.reload()
                 }
             }

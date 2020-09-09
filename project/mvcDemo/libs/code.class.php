@@ -36,7 +36,6 @@ class code{
         $str=$this->getText();
 
         $this->str=strtolower($str);
-
         for ($i=0;$i<$this->codeLen;$i++){
             $size=mt_rand($this->fontSize["min"],$this->fontSize["max"]);
             $angle=mt_rand($this->fontAngle["min"],$this->fontAngle["max"]);
