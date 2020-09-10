@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-31 09:30:22
+/* Smarty version 3.1.34-dev-7, created on 2020-09-10 12:03:02
   from 'D:\wamp64\www\project\mvcDemo\application\template\index\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4cc32e8ff8e1_47710664',
+  'unifunc' => 'content_5f5a15f6995dd1_81581513',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fd4ec462ec011ac095dc9d8d6ebea8fec4d09739' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\index\\index.html',
-      1 => 1598866221,
+      1 => 1599739381,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4cc32e8ff8e1_47710664 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5a15f6995dd1_81581513 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,30 +109,21 @@ imgs/true.png" alt="">
         <div class="aboutus-title">
             ABOUT&nbsp;US
         </div>
-        <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['condata']->value, 'v');
-$_smarty_tpl->tpl_vars['v']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
-$_smarty_tpl->tpl_vars['v']->do_else = false;
-?>
         <div class="aboutus-subtitle">
-            <?php echo $_smarty_tpl->tpl_vars['v']->value["ctitle"];?>
+            <?php echo $_smarty_tpl->tpl_vars['condata0']->value["ctitle"];?>
 
         </div>
         <div class="aboutus-content1">
-            <?php echo $_smarty_tpl->tpl_vars['v']->value["cons"];?>
+            <?php echo $_smarty_tpl->tpl_vars['condata0']->value["cons"];?>
 
         </div>
-        <?php
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <div class="aboutus-img">
-            <img src="<?php echo IMG_ADD;?>
-imgs/aboutus1.png" alt="">
-            <img src="<?php echo IMG_ADD;?>
-imgs/aboutus2.png" alt="">
-            <img src="<?php echo IMG_ADD;?>
-imgs/aboutus3.png" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img1_1']->value['imgurl'];?>
+" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img1_2']->value['imgurl'];?>
+" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img1_3']->value['imgurl'];?>
+" alt="">
         </div>
         <div class="aboutus-more">
             <a href="#">了解更多</a>
@@ -147,14 +138,14 @@ imgs/aboutus3.png" alt="">
             产品与服务
         </div>
         <div class="pro-img">
-            <img src="<?php echo IMG_ADD;?>
-imgs/pro1.png" alt="">
-            <img src="<?php echo IMG_ADD;?>
-imgs/pro2.png" alt="">
-            <img src="<?php echo IMG_ADD;?>
-imgs/pro3.png" alt="">
-            <img src="<?php echo IMG_ADD;?>
-imgs/pro4.png" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img2_1']->value['imgurl'];?>
+" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img2_2']->value['imgurl'];?>
+" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img2_3']->value['imgurl'];?>
+" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img2_4']->value['imgurl'];?>
+" alt="">
         </div>
     </div>
     <!-- 公司发展沿革 -->

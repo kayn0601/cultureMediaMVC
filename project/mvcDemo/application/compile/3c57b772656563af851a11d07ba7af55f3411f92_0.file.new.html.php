@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-31 11:08:06
+/* Smarty version 3.1.34-dev-7, created on 2020-09-10 12:32:16
   from 'D:\wamp64\www\project\mvcDemo\application\template\index\new.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4cda167ab6d4_44589916',
+  'unifunc' => 'content_5f5a1cd036f0a9_56819093',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3c57b772656563af851a11d07ba7af55f3411f92' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\index\\new.html',
-      1 => 1598872084,
+      1 => 1599741135,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4cda167ab6d4_44589916 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5a1cd036f0a9_56819093 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,8 +52,8 @@ index/public.js"><?php echo '</script'; ?>
             当前位置：首页 > 新闻资讯 > 公司动态
         </div>
         <div class="comTop">
-            <img src="<?php echo IMG_ADD;?>
-imgs-n/comp1.png" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img']->value['imgurl'];?>
+" alt="">
             <div class="comTop-content">
                 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['newarr1']->value, 'v');

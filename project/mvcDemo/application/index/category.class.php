@@ -42,9 +42,31 @@ class category{
         $smarty->assign("sonInfo",$sonInfo);
         $smarty->assign("condata",$condata);
 
-        if ($currentInfo["tpl_name"]=="aboutus.html"||$currentInfo["tpl_name"]=="pro.html"){
+        if ($currentInfo["tpl_name"]=="index.html"){
+            $smarty->assign("condata0",$condata[0]);
+            $smarty->assign("img1_1",$condata[1]);
+            $smarty->assign("img1_2",$condata[2]);
+            $smarty->assign("img1_3",$condata[3]);
+            $smarty->assign("img2_1",$condata[4]);
+            $smarty->assign("img2_2",$condata[5]);
+            $smarty->assign("img2_3",$condata[6]);
+            $smarty->assign("img2_4",$condata[7]);
+        }
+        if ($currentInfo["tpl_name"]=="aboutus.html"){
             $smarty->assign("condata0",$condata[0]);
             $smarty->assign("condata1",$condata[1]);
+            $smarty->assign("img1",$condata[2]);
+            $smarty->assign("img2",$condata[3]);
+        }
+        if ($currentInfo["tpl_name"]=="pro.html"){
+            $smarty->assign("condata0",$condata[0]);
+            $smarty->assign("condata1",$condata[1]);
+            $smarty->assign("img1",$condata[2]);
+            $smarty->assign("img2",$condata[3]);
+            $smarty->assign("img3",$condata[4]);
+            $smarty->assign("img4",$condata[5]);
+            $smarty->assign("img5",$condata[6]);
+            $smarty->assign("img6",$condata[7]);
         }
         if ($currentInfo["tpl_name"]=="new.html"){
             $newarr1=array();
@@ -57,6 +79,7 @@ class category{
             }
             $smarty->assign("newarr1",$newarr1);
             $smarty->assign("newarr2",$newarr2);
+            $smarty->assign("img",$condata[0]);
         }
         if ($currentInfo["tpl_name"]=="find.html"){
             $smarty->assign("condata0",$condata[0]);

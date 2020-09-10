@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 09:06:15
+/* Smarty version 3.1.34-dev-7, created on 2020-09-10 12:20:47
   from 'D:\wamp64\www\project\mvcDemo\application\template\index\pro.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4b6c07830b81_20695297',
+  'unifunc' => 'content_5f5a1a1f367448_48375669',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c08e68b2e59f0ac365c6695eb92c86c82096b14d' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\index\\pro.html',
-      1 => 1598778373,
+      1 => 1599740445,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4b6c07830b81_20695297 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5a1a1f367448_48375669 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,25 +61,25 @@ index/public.js"><?php echo '</script'; ?>
 
         </div>
         <div class="library-img1">
-            <img src="<?php echo IMG_ADD;?>
-/imgs-p/library1.png" alt="">
-            <img src="<?php echo IMG_ADD;?>
-/imgs-p/library2.png" alt="">
-            <img src="<?php echo IMG_ADD;?>
-/imgs-p/library3.png" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img1']->value['imgurl'];?>
+" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img2']->value['imgurl'];?>
+" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img3']->value['imgurl'];?>
+" alt="">
         </div>
         <div class="library-content">
             <?php echo $_smarty_tpl->tpl_vars['condata1']->value["cons"];?>
 
         </div>
         <div class="library-img2">
-            <img src="<?php echo IMG_ADD;?>
-/imgs-p/library4.png" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img4']->value['imgurl'];?>
+" alt="">
             <div>
-                <img src="<?php echo IMG_ADD;?>
-/imgs-p/library5.png" alt="">
-                <img src="<?php echo IMG_ADD;?>
-/imgs-p/library6.png" alt="">
+                <img src="<?php echo $_smarty_tpl->tpl_vars['img5']->value['imgurl'];?>
+" alt="">
+                <img src="<?php echo $_smarty_tpl->tpl_vars['img6']->value['imgurl'];?>
+" alt="">
             </div>
         </div>
     </div>

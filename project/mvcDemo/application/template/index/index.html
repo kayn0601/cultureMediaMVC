@@ -71,18 +71,16 @@
         <div class="aboutus-title">
             ABOUT&nbsp;US
         </div>
-        {foreach $condata as $v}
         <div class="aboutus-subtitle">
-            {$v["ctitle"]}
+            {$condata0["ctitle"]}
         </div>
         <div class="aboutus-content1">
-            {$v["cons"]}
+            {$condata0["cons"]}
         </div>
-        {/foreach}
         <div class="aboutus-img">
-            <img src="{IMG_ADD}imgs/aboutus1.png" alt="">
-            <img src="{IMG_ADD}imgs/aboutus2.png" alt="">
-            <img src="{IMG_ADD}imgs/aboutus3.png" alt="">
+            <img src="{$img1_1['imgurl']}" alt="">
+            <img src="{$img1_2['imgurl']}" alt="">
+            <img src="{$img1_3['imgurl']}" alt="">
         </div>
         <div class="aboutus-more">
             <a href="#">了解更多</a>
@@ -97,10 +95,10 @@
             产品与服务
         </div>
         <div class="pro-img">
-            <img src="{IMG_ADD}imgs/pro1.png" alt="">
-            <img src="{IMG_ADD}imgs/pro2.png" alt="">
-            <img src="{IMG_ADD}imgs/pro3.png" alt="">
-            <img src="{IMG_ADD}imgs/pro4.png" alt="">
+            <img src="{$img2_1['imgurl']}" alt="">
+            <img src="{$img2_2['imgurl']}" alt="">
+            <img src="{$img2_3['imgurl']}" alt="">
+            <img src="{$img2_4['imgurl']}" alt="">
         </div>
     </div>
     <!-- 公司发展沿革 -->

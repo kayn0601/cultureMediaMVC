@@ -39,6 +39,14 @@ class index{
         $smarty->assign("currentInfo",$currentInfo);
         $smarty->assign("sonInfo",$sonInfo);
         $smarty->assign("condata",$condata);
+        $smarty->assign("condata0",$condata[0]);
+        $smarty->assign("img1_1",$condata[1]);
+        $smarty->assign("img1_2",$condata[2]);
+        $smarty->assign("img1_3",$condata[3]);
+        $smarty->assign("img2_1",$condata[4]);
+        $smarty->assign("img2_2",$condata[5]);
+        $smarty->assign("img2_3",$condata[6]);
+        $smarty->assign("img2_4",$condata[7]);
 
         $smarty->display("index/index.html");
     }

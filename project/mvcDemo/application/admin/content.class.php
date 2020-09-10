@@ -4,6 +4,7 @@ if(!defined("MVC")) {
 }
 use \libs\smarty;
 use \libs\db;
+use \libs\upload;
 class content{
     function add(){
         $smarty=new smarty();
@@ -14,9 +15,10 @@ class content{
         $cid=$_POST["cid"];
         $ctitle=$_POST["ctitle"];
         $cons=$_POST["cons"];
+        $imgurl=$_POST["imgurl"];
         $database=new db();
         $db=$database->db;
-        $db->query("insert into content (ctitle,cons,cid) values ('$ctitle','$cons','$cid')");
+        $db->query("insert into content (ctitle,cons,cid,imgurl) values ('$ctitle','$cons','$cid','$imgurl')");
         if ($db->affected_rows>0){
             echo "<script>alert('插入成功');location.href='/project/mvcDemo/index.php/admin/content/add'</script>";
         }else{
@@ -66,14 +68,32 @@ class content{
         $ctitle=$_POST["ctitle"];
         $cons=$_POST["cons"];
         $cid=$_POST["cid"];
+        $imgurl=$_POST["imgurl"];
 
         $database=new db();
         $db=$database->db;
-        $db->query("update content set ctitle='$ctitle',cons='$cons',cid=$cid where conid=".$conid);
+        $db->query("update content set ctitle='$ctitle',cons='$cons',cid=$cid,imgurl='$imgurl' where conid=".$conid);
         if ($db->affected_rows>0){
             echo "<script>alert('修改成功');location.href='/project/mvcDemo/index.php/admin/content/edit?conid='+$conid</script>";
         }else{
             echo "<script>alert('修改失败');location.href='/project/mvcDemo/index.php/admin/content/edit?conid='+$conid'</script>";
         }
     }
+
+    function uploadfile(){
+        $upload=new upload();
+        $upload->up();
+
+        $path=HOST_ADD."/project/mvcDemo/".$upload->fullpath;
+        echo "$path";
+    }
+
+    function tinyuploadfile(){
+        $upload=new upload();
+        $upload->up();
+
+        $path=HOST_ADD."/project/mvcDemo/".$upload->fullpath;
+        echo json_encode(array('location'=>$path));
+    }
+
 }
