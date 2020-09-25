@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-09 02:16:19
+/* Smarty version 3.1.34-dev-7, created on 2020-09-25 10:01:49
   from 'D:\wamp64\www\project\mvcDemo\application\template\admin\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f583af3aefbb4_98854168',
+  'unifunc' => 'content_5f6dc00d6c1165_96696794',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79a050e159fbc4067e86e2401b6695a6e3507e7e' => 
     array (
       0 => 'D:\\wamp64\\www\\project\\mvcDemo\\application\\template\\admin\\index.html',
-      1 => 1599617774,
+      1 => 1601028106,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f583af3aefbb4_98854168 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f6dc00d6c1165_96696794 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -89,7 +89,7 @@ admin/index.css">
         </div>
     </div>
     <div class="bottom">
-        <div>xxxx版权信息，xxx制作，联系方式</div>
+        <div>版权信息:李凯元制作，联系方式13068015681</div>
     </div>
 </container>
 </body>
